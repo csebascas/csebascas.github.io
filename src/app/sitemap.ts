@@ -1,7 +1,9 @@
 import { getAllPosts } from "@/lib/mdx";
 import type { MetadataRoute } from "next";
 
-const BASE_URL = "https://sebastian.dev"; // Replace with your domain
+export const dynamic = "force-static";
+
+const BASE_URL = "https://csebascas.github.io/personal-site";
 
 export default function sitemap(): MetadataRoute.Sitemap {
     const posts = getAllPosts();
