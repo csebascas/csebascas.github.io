@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { Heart, Tv, ExternalLink } from "lucide-react";
 import { getAllPosts } from "@/lib/mdx";
 
 export default function Home() {
@@ -23,47 +22,21 @@ export default function Home() {
         <h2>Projects</h2>
         <div className="project-list">
 
-          {/* Pray4Me — left aligned */}
-          <div className="project-card project-card-left">
-            <div className="project-icon">
-              <Heart size={28} strokeWidth={1.5} />
-            </div>
-            <div className="project-body">
-              <h3 className="project-title">Pray4Me</h3>
-              <p className="project-blurb">
-                A community prayer app where people share their intentions and lift each other up. Built to make faith and connection more accessible, one prayer at a time.
-              </p>
-              <a
-                href="https://pray4me.app"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="project-link"
-              >
-                Visit site <ExternalLink size={13} strokeWidth={2} />
-              </a>
-            </div>
-          </div>
+          <article className="project-item">
+            <a href="https://pray4me.app" target="_blank" rel="noopener noreferrer">
+              <h3>Pray4Me</h3>
+            </a>
+            <p>A community prayer app where people share intentions and lift each other up. Faith and connection, one prayer at a time.</p>
+            <a href="https://pray4me.app" target="_blank" rel="noopener noreferrer" className="project-url">pray4me.app</a>
+          </article>
 
-          {/* Tanoshii — right aligned */}
-          <div className="project-card project-card-right">
-            <div className="project-body">
-              <h3 className="project-title">Tanoshii</h3>
-              <p className="project-blurb">
-                A beautiful companion app for AniList. Track your anime and manga, discover what to watch next, and explore your list with a clean and minimal interface.
-              </p>
-              <a
-                href="https://tanoshii.cyou"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="project-link"
-              >
-                Visit site <ExternalLink size={13} strokeWidth={2} />
-              </a>
-            </div>
-            <div className="project-icon">
-              <Tv size={28} strokeWidth={1.5} />
-            </div>
-          </div>
+          <article className="project-item project-item-right">
+            <a href="https://tanoshii.cyou" target="_blank" rel="noopener noreferrer">
+              <h3>Tanoshii</h3>
+            </a>
+            <p>A minimal companion app for AniList. Track your anime and manga and discover what to watch next.</p>
+            <a href="https://tanoshii.cyou" target="_blank" rel="noopener noreferrer" className="project-url">tanoshii.cyou</a>
+          </article>
 
         </div>
       </section>
