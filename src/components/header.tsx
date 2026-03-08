@@ -14,7 +14,7 @@ export function Header() {
     }, []);
 
     return (
-        <header>
+        <header className="site-header">
             <Link href="/" style={{ fontWeight: 600, fontSize: "1.1rem" }}>
                 Sebastian
             </Link>

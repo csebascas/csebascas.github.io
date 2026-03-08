@@ -57,13 +57,13 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
 
   return (
     <article className="prose">
-      <header style={{ marginBottom: "2rem" }}>
+      <div className="fade-in" style={{ marginBottom: "2rem", animationDelay: "0ms" }}>
         <h1 style={{ marginTop: 0 }}>{meta.title}</h1>
-        <div style={{ color: "var(--muted-foreground)", fontSize: "0.9rem" }}>
+        <time style={{ color: "var(--muted-foreground)", fontSize: "0.85rem" }}>
           {meta.date}
-        </div>
-      </header>
-      <div className="mdx-content">
+        </time>
+      </div>
+      <div className="mdx-content fade-in" style={{ animationDelay: "60ms" }}>
         {/* @ts-expect-error Async Server Component */}
         <MDXRemote source={content} options={options} components={components} />
         <CopyCodeButton />

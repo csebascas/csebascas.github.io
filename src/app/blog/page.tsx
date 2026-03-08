@@ -11,20 +11,16 @@ export default function BlogIndex() {
 
     return (
         <div className="prose">
-            <h1 style={{ marginTop: 0 }}>Blog</h1>
-            <div style={{ display: "flex", flexDirection: "column", gap: "2rem", marginTop: "2rem" }}>
-                {posts.map((post) => (
-                    <div key={post.slug} className="post-preview">
-                        <Link href={`/blog/${post.slug}`} style={{ textDecoration: "none" }}>
-                            <h3 style={{ margin: "0 0 0.5rem 0", fontSize: "1.25rem" }}>{post.meta.title}</h3>
-                            <p style={{ margin: 0, fontSize: "0.9rem", color: "var(--muted-foreground)" }}>
-                                {post.meta.description}
-                            </p>
-                            <div style={{ fontSize: "0.8rem", color: "var(--muted-foreground)", marginTop: "0.5rem" }}>
-                                {post.meta.date}
-                            </div>
+            <h1 className="fade-in" style={{ marginTop: 0, animationDelay: "0ms" }}>Blog</h1>
+            <div className="post-list" style={{ marginTop: "2rem" }}>
+                {posts.map((post, i) => (
+                    <article key={post.slug} className="post-item fade-in" style={{ animationDelay: `${60 + i * 50}ms` }}>
+                        <Link href={`/blog/${post.slug}`}>
+                            <h3>{post.meta.title}</h3>
                         </Link>
-                    </div>
+                        <p>{post.meta.description}</p>
+                        <time>{post.meta.date}</time>
+                    </article>
                 ))}
             </div>
         </div>

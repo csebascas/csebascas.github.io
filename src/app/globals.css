@@ -423,7 +423,7 @@ pre code {
 }
 
 /* Header */
-header {
+.site-header {
   height: var(--header-height);
   display: flex;
   align-items: center;

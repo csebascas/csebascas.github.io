@@ -28,7 +28,7 @@ export default function Home() {
             <a href="https://pray4me.app" target="_blank" rel="noopener noreferrer" className="accent-link">pray4me.app</a>
           </article>
 
-          <article className="project-item project-item-right">
+          <article className="project-item">
             <h3>Tanoshii</h3>
             <p>A minimal companion app for AniList. Track your anime and manga and discover what to watch next.</p>
             <a href="https://tanoshii.cyou" target="_blank" rel="noopener noreferrer" className="accent-link">tanoshii.cyou</a>
