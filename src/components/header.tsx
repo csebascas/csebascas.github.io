@@ -17,10 +17,9 @@ export function Header() {
         <header className="site-header">
             <Link href="/" style={{ fontWeight: 600, fontSize: "1.1rem", display: "flex", alignItems: "center", gap: "0.5rem" }}>
                 <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                    <circle cx="9" cy="9" r="8" stroke="currentColor" strokeWidth="1.25"/>
-                    <circle cx="6.5" cy="7.5" r="0.85" fill="currentColor"/>
-                    <circle cx="11.5" cy="7.5" r="0.85" fill="currentColor"/>
-                    <path d="M6 11c0.8 1.2 5.2 1.2 6 0" stroke="currentColor" strokeWidth="1.25" strokeLinecap="round"/>
+                    <circle cx="6.5" cy="7" r="1" fill="currentColor"/>
+                    <circle cx="11.5" cy="7" r="1" fill="currentColor"/>
+                    <path d="M5.5 11.5c1 1.5 6 1.5 7 0" stroke="currentColor" strokeWidth="1.25" strokeLinecap="round"/>
                 </svg>
                 Sebastian
             </Link>
