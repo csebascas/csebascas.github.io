@@ -34,7 +34,7 @@ export default function Home() {
                 A community prayer app where people share their intentions and lift each other up. Built to make faith and connection more accessible, one prayer at a time.
               </p>
               <a
-                href="#"
+                href="https://pray4me.app"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="project-link"
@@ -52,7 +52,7 @@ export default function Home() {
                 A beautiful companion app for AniList. Track your anime and manga, discover what to watch next, and explore your list with a clean and minimal interface.
               </p>
               <a
-                href="#"
+                href="https://tanoshii.cyou"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="project-link"

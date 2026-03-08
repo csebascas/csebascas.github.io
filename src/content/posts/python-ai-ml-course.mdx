@@ -1,0 +1,95 @@
+---
+title: "FreeCodeCamp's Harvard CS50 course"
+date: "2026-01-30"
+description: "I took FreeCodeCamp's 12 hour Harvard CS50 course to see how well it prepared me for a career in AI/ML. I am a complete beginner in AI/ML - how well does it prepare you?"
+---
+
+## Background
+
+I recently took FreeCodeCamp's 12 hour Harvard CS50 course to see how well it prepared me for a career in AI/ML. I am currently a 17 year-old high school student who is interested in AI/ML and in my senior year of high school. I took AP Computer Science A (Java) my junior year and scored a 5 (the highest score). I have also taken a few online courses in Python, but I am still a complete beginner in AI/ML. This blog post is meant to serve as a review of the course and to help other beginners decide whether or not they should take it.
+
+### The Instructor
+
+The instructor of this course, **matt**, blew my mind. His hand movement and voice ntonation is perfect in what I would want to see in a great professor.
+
+### Search (~2 hours)
+
+The first 30 minutes or so was conceptual explanation with great visuals - I could understand everything. However, when instructor X started showing off the code for the conceptual, he went a bit too fast for my taste and skipped the "boring" parts, which I find interesting. Not cool X !
+
+# My notes
+
+## Search
+
+> What do we do when we have some sort of a situation, and we want an agent to look for a solution to that problem?
+
+- **Agent** - an entity that previews its environment and acts upon that environment
+- **State** - a configuration of the agent and its environment
+- **Initial state** - the state at which an agent begins
+  - **Actions** - choices that can be made in a state
+
+- **Transition model** - a description of what state results from performaning any applicable action in any state
+
+The _result_ function can take an input of a state (for example, a 15 puzzle), and an action (for example, moving a block to the right) and give us a new result. The output is a **new** state!
+
+![A great example of the transition model](/images/python-ai-ml-course/search01.png)
+
+The **state space** is all possible states reachable from the initial state by any sequence of actions.
+
+- We can draw diagrams connected to each state, connecting to each possible state based on a previous state. Arrows connect individual states, and can be represented as a graph of **nodes**
+
+### How can the AI know it found the goal?
+
+- **Goal test** - a way to detemrine whether a given state is a goal state
+- **Path cost** - the cost of reaching a given state from the initial state
+
+Search problems have initial state, actions, transiiton model, goal test, and path cost function.
+
+### Nodes
+
+**Nodes** is a type of data structure that keeps track of:
+
+- a state
+- a parent (node that generated this node)
+- an action (action applied to parent to get node)
+- a path cost (from initial state to node)
+
+### Frontiers
+
+**Frontiers** consider all of the available options. It represents all of the things we could explore next, that we haven't yet explored or visited.
+
+- Initially, frontiers only know the initial state
+- The algorithm then follows a loop:
+  - If the frontier is empty, there is **no solution**
+  - Otherwise, pick a node from the frontier to expand
+  - If the node is a goal, return it
+  - Otherwise, add all of its neighbors to the frontier
+
+- **Depth-first search** is a search algorithm that always expands the deepest node in the frontier
+- **Breadth-first search** is a search algorithm that always expands the shallowest node in the frontier
+  - Uses a **queue**, where the first node added to the frontier is the first that is searched.
+
+These two search algorithms are great for different use cases - sometimes, one will be better than the other.
+There are trade-offs between both.
+
+<details>
+<summary>My detailed notes on Search</summary>
+- **Agent** - an entity that previews its environment
+- **State** - a configuration of the agent
+- More notes here...
+</details>
+```tsx
+const toggleTheme = () => {
+  const newTheme = theme === "dark" ? "light" : "dark";
+  setTheme(newTheme);
+  document.documentElement.setAttribute("data-theme", newTheme);
+  localStorage.setItem("theme", newTheme);
+};
+```
+
+## Lists
+
+- Item 1
+- Item 2
+- Item 3
+
+Stay tuned for more!

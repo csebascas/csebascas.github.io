@@ -1,0 +1,32 @@
+---
+title: "Hello World"
+date: "2024-01-01"
+description: "My first blog post using Next.js and MDX."
+---
+
+# Hello Worlds okay
+
+This is my first post on my new minimalist blog. I built this using **Next.js**, **Vanilla CSS**, and **MDX**.
+
+My goal is to share my thoughts on software engineering, design, and building products.
+
+## Code Snippet Example
+
+Here is how I implemented the theme toggle:
+
+```tsx
+const toggleTheme = () => {
+  const newTheme = theme === "dark" ? "light" : "dark";
+  setTheme(newTheme);
+  document.documentElement.setAttribute("data-theme", newTheme);
+  localStorage.setItem("theme", newTheme);
+};
+```
+
+## Lists
+
+- Item 1
+- Item 2
+- Item 3
+
+Stay tuned for more!
