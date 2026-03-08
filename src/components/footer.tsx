@@ -8,14 +8,14 @@ export function Footer() {
                 &copy; {new Date().getFullYear()} Sebastian. All rights reserved.
             </div>
             <div className="flex gap-4">
-                <a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-                    <Github size={20} />
+                <a href="https://github.com/csebascas" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                    <Github size={18} />
                 </a>
-                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-                    <Linkedin size={20} />
+                <a href="https://www.linkedin.com/in/sebastian-castro-4b5a7230b/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                    <Linkedin size={18} />
                 </a>
-                <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
-                    <Twitter size={20} />
+                <a href="https://twitter.com/csebasdev" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+                    <Twitter size={18} />
                 </a>
             </div>
         </footer>

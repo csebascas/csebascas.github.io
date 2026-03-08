@@ -12,10 +12,7 @@ export default function Home() {
           I'm a software engineer building tools for the future. I write about code, design, and life.
         </p>
         <p>
-          Currently, I'm working on exciting new projects. You can find me on{" "}
-          <a href="https://twitter.com/csebasdev" target="_blank" rel="noopener noreferrer" className="accent-link">Twitter</a>,{" "}
-          <a href="https://github.com/csebascas" target="_blank" rel="noopener noreferrer" className="accent-link">GitHub</a>, or{" "}
-          <a href="https://www.linkedin.com/in/sebastian-castro-4b5a7230b/" target="_blank" rel="noopener noreferrer" className="accent-link">LinkedIn</a>.
+          Currently building exciting new projects. Find my links below.
         </p>
       </section>
 
