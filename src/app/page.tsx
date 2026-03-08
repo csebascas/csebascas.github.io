@@ -6,7 +6,7 @@ export default function Home() {
 
   return (
     <div className="prose">
-      <section style={{ marginBottom: "4rem" }}>
+      <section className="fade-in" style={{ marginBottom: "4rem", animationDelay: "0ms" }}>
         <h1 style={{ marginTop: 0 }}>Hello, I'm Sebastian.</h1>
         <p className="lead">
           I'm a software engineer building tools for the future. I write about code, design, and life.
@@ -18,34 +18,30 @@ export default function Home() {
         </p>
       </section>
 
-      <section id="projects" style={{ marginBottom: "4rem" }}>
+      <section id="projects" className="fade-in" style={{ marginBottom: "4rem", animationDelay: "60ms" }}>
         <h2>Projects</h2>
         <div className="project-list">
 
           <article className="project-item">
-            <a href="https://pray4me.app" target="_blank" rel="noopener noreferrer">
-              <h3>Pray4Me</h3>
-            </a>
+            <h3>Pray4Me</h3>
             <p>A community prayer app where people share intentions and lift each other up. Faith and connection, one prayer at a time.</p>
-            <a href="https://pray4me.app" target="_blank" rel="noopener noreferrer" className="project-url">pray4me.app</a>
+            <a href="https://pray4me.app" target="_blank" rel="noopener noreferrer" className="accent-link">pray4me.app</a>
           </article>
 
           <article className="project-item project-item-right">
-            <a href="https://tanoshii.cyou" target="_blank" rel="noopener noreferrer">
-              <h3>Tanoshii</h3>
-            </a>
+            <h3>Tanoshii</h3>
             <p>A minimal companion app for AniList. Track your anime and manga and discover what to watch next.</p>
-            <a href="https://tanoshii.cyou" target="_blank" rel="noopener noreferrer" className="project-url">tanoshii.cyou</a>
+            <a href="https://tanoshii.cyou" target="_blank" rel="noopener noreferrer" className="accent-link">tanoshii.cyou</a>
           </article>
 
         </div>
       </section>
 
-      <section>
+      <section className="fade-in" style={{ animationDelay: "120ms" }}>
         <h2>Recent Posts</h2>
         <div className="post-list">
-          {posts.map((post) => (
-            <article key={post.slug} className="post-item">
+          {posts.map((post, i) => (
+            <article key={post.slug} className="post-item fade-in" style={{ animationDelay: `${180 + i * 50}ms` }}>
               <Link href={`/blog/${post.slug}`}>
                 <h3>{post.meta.title}</h3>
               </Link>

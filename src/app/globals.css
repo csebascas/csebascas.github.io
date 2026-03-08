@@ -452,6 +452,18 @@ footer {
   gap: 2rem;
 }
 
+.post-item {
+  transition: opacity 0.2s ease;
+}
+
+.post-list:hover .post-item {
+  opacity: 0.4;
+}
+
+.post-list:hover .post-item:hover {
+  opacity: 1;
+}
+
 .post-item h3 {
   margin: 0 0 0.5rem 0;
   font-size: 1.125rem;
@@ -472,6 +484,23 @@ footer {
   color: var(--muted-foreground);
 }
 
+/* Fade-in animation */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  opacity: 0;
+  animation: fadeUp 0.35s ease forwards;
+}
+
 /* Projects */
 .project-list {
   display: flex;
@@ -483,25 +512,16 @@ footer {
 .project-item h3 {
   margin: 0 0 0.5rem 0;
   font-size: 1.125rem;
-  transition: color 0.2s ease;
-}
-
-.project-item h3:hover {
-  color: var(--accent);
+  color: var(--foreground);
 }
 
 .project-item p {
-  margin: 0 0 0.25rem 0;
+  margin: 0 0 0.35rem 0;
   font-size: 0.9rem;
 }
 
 .project-item-right {
   text-align: right;
-}
-
-.project-url {
-  font-size: 0.8rem;
-  color: var(--muted-foreground);
 }
 
 /* Utilities */
